@@ -1,0 +1,80 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<script>
+window.onload=function()
+{
+    var oDiv=document.getElementById("div1");
+    var oP=oDiv.getElementsByTagName("p");
+    var aDiv=oDiv.getElementsByTagName("div");
+    for(i=0;i<oP.length;i++)
+    {
+        oP[i].index=i;
+        //alert(oP.length);
+        oP[i].onclick=function()
+        {
+            for(j=0;j<aDiv.length;j++)
+            {
+                aDiv[j].style.display="none";
+                }
+                //alert(this.index);
+            aDiv[this.index].style.display="block";
+            }
+        }
+    }
+</script>
+<style>
+.hidediv{
+    display:relative;
+    left:0px;
+    top:20px
+    height:400px;
+    width:800px;
+    background:000000;
+    }
+
+
+</style>
+<style>
+
+
+/*p { display:inline}*/
+p.pos_abs1
+{
+position:absolute;
+left:250px;
+top:300px;
+font-size:20px
+}
+
+p.pos_abs2
+{
+position:absolute;
+left:300px;
+top:300px;
+font-size:20px
+}
+
+iframe.pos_abs3
+{
+position:relative;
+left:0px;
+top:30px
+}
+</style>
+</head>
+ 
+<body>
+
+
+<div class="pos_abs3" id="div1">
+    <p class="pos_abs1">Map  </p>
+<div><iframe class="pos_abs3" width="1000" height="400" frameborder="0" scrolling="no" allowtransparency="true" src="https://mapalist.com/map/571644"></iframe> </div>
+
+    <p class="pos_abs2">List</p>
+    <div class="hidediv"><iframe class="pos_abs3" width="1000" height="300" src="https://docs.google.com/spreadsheets/d/1x-GscUaxAo15M1_qjBCjkphJX26rbJR8ghl_hvfgWHg/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe> </div>
+
+</div>
+</body>
+</html>
