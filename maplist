@@ -1,7 +1,4 @@
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>无标题文档</title>
+
 <script>
 window.onload=function()
 {
@@ -43,16 +40,16 @@ window.onload=function()
 p.pos_abs1
 {
 position:absolute;
-left:250px;
-top:300px;
+left:0px;
+top:0px;
 font-size:20px
 }
 
 p.pos_abs2
 {
 position:absolute;
-left:300px;
-top:300px;
+left:50px;
+top:0px;
 font-size:20px
 }
 
@@ -60,21 +57,25 @@ iframe.pos_abs3
 {
 position:relative;
 left:0px;
-top:30px
+top:60px
+}
+
+div.pos_abs4
+{
+position:relative;
+left:0px;
+top:0px;
+width: 800px;
+height: 500px;
 }
 </style>
-</head>
- 
-<body>
 
 
-<div class="pos_abs3" id="div1">
+<div class="pos_abs4" id="div1">
     <p class="pos_abs1">Map  </p>
-<div><iframe class="pos_abs3" width="1000" height="400" frameborder="0" scrolling="no" allowtransparency="true" src="https://mapalist.com/map/571644"></iframe> </div>
+<div><iframe class="pos_abs3" width="750" height="520" frameborder="0" scrolling="no" allowtransparency="true" src="https://mapalist.com/map/571644"></iframe> </div>
 
     <p class="pos_abs2">List</p>
-    <div class="hidediv"><iframe class="pos_abs3" width="1000" height="300" src="https://docs.google.com/spreadsheets/d/1x-GscUaxAo15M1_qjBCjkphJX26rbJR8ghl_hvfgWHg/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe> </div>
+    <div class="hidediv"><iframe class="pos_abs3" width="700" height="500" src="https://docs.google.com/spreadsheets/d/1x-GscUaxAo15M1_qjBCjkphJX26rbJR8ghl_hvfgWHg/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe> </div>
 
 </div>
-</body>
-</html>
